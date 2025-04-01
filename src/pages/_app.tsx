@@ -1,7 +1,13 @@
-// src/pages/_app.tsx
+import React, { FC } from "react";
 import '../styles/globals.css';  // globals.css dosyasını dahil edin
 
-function MyApp({ Component, pageProps }) {
+interface pageProps {
+  Component ?: any;
+  pageProps ?: any;
+}
+
+
+const MyApp: FC<pageProps> = ({ Component, pageProps }) => {
   return <Component {...pageProps} />;
 }
 
