@@ -5,7 +5,12 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        mainOrange: '#f9800f',
+        hoverOrange: '#D46D0D'
+      },
+    },
   },
   plugins: [],
 };
